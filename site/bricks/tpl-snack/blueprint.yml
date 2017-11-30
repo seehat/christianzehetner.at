@@ -1,0 +1,14 @@
+title: Snack
+pages: false
+files:
+  sortable: true
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  title: title
+  text: text
+  seo: seo
