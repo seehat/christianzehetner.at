@@ -1,0 +1,17 @@
+
+
+.c-text *:last-child {
+  margin-bottom: 0;
+}
+
+.c-text-color-dark {
+  &, p {
+    color: color(dark);
+  }
+}
+
+.c-text-color-light {
+  &, p {
+    color: color(light);
+  }
+}

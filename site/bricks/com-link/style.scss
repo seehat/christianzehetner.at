@@ -1,0 +1,7 @@
+
+.c-link {
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-link-hover;
+  }
+}

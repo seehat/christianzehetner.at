@@ -1,0 +1,24 @@
+title: Baukasten
+icon: th
+pages:
+  template: default
+  build:
+    - title: _modules
+      uid: modules
+      template: modules
+files: false
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  title:
+    label: Titel
+    type:  text
+  modules: modules
+  settings:
+    label: Einstellungen
+    type: headline
+  hideheaderfooter:
+    label: Landingpage
+    type: checkbox
+    text: Header und Footer verstecken
+  seo: seo

@@ -1,0 +1,5 @@
+label: Text
+type: markdown
+header1: h2
+header2: h3
+help: Hilfe zur Formatierung findest du in der <a href="/dokumentation#section-Text-formatieren" target="_blank">Doku</a>.

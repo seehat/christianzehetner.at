@@ -1,0 +1,46 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: 0.033333333em;
+}
+
+h1 {
+  margin-bottom: $unit-large;
+
+  &:after {
+    content: ' ';
+    height: 0;
+    width: 72px;
+    border-bottom: 4px solid color(secondary);
+    clear: both;
+    display: block;
+
+    .u-text-center & {
+      margin: 0 auto;
+    }
+
+    .u-text-right & {
+      margin-left:  auto;
+    }
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: $unit-large;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+
+
+// Horizontal rules
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: color(tint);
+  margin-top: $unit;
+  margin-bottom: $unit*2 - 1px;
+}

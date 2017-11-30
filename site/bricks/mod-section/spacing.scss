@@ -1,0 +1,68 @@
+
+.o-section--spacing-default {
+  padding-top: $unit-small;
+  padding-bottom: $unit-small;
+
+  @include mq ($from: md) {
+    padding-top: $unit;
+    padding-bottom: $unit;
+  }
+
+  &.o-section--width-full {
+    padding-left: $unit-small;
+    padding-right: $unit-small;
+
+    @include mq ($from: md) {
+      padding-left: $unit;
+      padding-right: $unit;
+    }
+  }
+}
+
+.o-section--spacing-tiny {
+  padding: $unit-tiny;
+}
+
+.o-section--spacing-small {
+  padding: $unit-small;
+}
+
+.o-section--spacing-large {
+  padding-top: $unit-small;
+  padding-bottom: $unit-small;
+
+  @include mq ($from: md) {
+    padding-top: $unit-large;
+    padding-bottom: $unit-large;
+  }
+
+  &.o-section--width-full {
+    padding-left: $unit-small;
+    padding-right: $unit-small;
+
+    @include mq ($from: md) {
+      padding-left: $unit-large;
+      padding-right: $unit-large;
+    }
+  }
+}
+
+.o-section--spacing-huge {
+  padding-top: $unit-small;
+  padding-bottom: $unit-small;
+
+  @include mq ($from: md) {
+    padding-top: $unit-huge;
+    padding-bottom: $unit-huge;
+  }
+
+  &.o-section--width-full {
+    padding-left: $unit-small;
+    padding-right: $unit-small;
+
+    @include mq ($from: md) {
+      padding-left: $unit-huge;
+      padding-right: $unit-huge;
+    }
+  }
+}

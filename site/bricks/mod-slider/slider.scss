@@ -1,0 +1,71 @@
+
+
+
+.c-fotorama__overlay {
+  display: flex;
+  height: 100%;
+
+  // background-color: rgba(0,0,0,.3);
+}
+
+.c-fotorama__caption {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+
+  text-align: center;
+
+  margin: auto;
+  padding: $unit-tiny;
+
+  opacity: 0;
+  transition: all ease-in-out .5s;
+
+  h1 {
+    display: inline-block;
+    margin-bottom: $unit-tiny;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  @include mq($from: md) {
+    h1 {
+      font-size: 26px;
+      color: color(dark);
+      background-color: color(primary);
+
+      padding: $unit-tiny $unit;
+    }
+
+    text-align: left;
+    font-size: 16px;
+    margin: $unit-large auto auto $unit-large;
+    padding: 0;
+  }
+}
+
+
+.fotorama__active .c-fotorama__caption {
+  opacity: 1;
+}
+
+
+
+
+.fotorama__nav--dots {
+  position: absolute;
+  bottom: 5px;
+  z-index: 10;
+}
+
+  .fotorama__dot {
+    border-color: color(dark);
+    width: 6px;
+    height: 6px;
+  }
+
+  .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    border-width: 4px;
+  }

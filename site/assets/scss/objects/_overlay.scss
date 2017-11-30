@@ -1,0 +1,17 @@
+
+.o-overlay {
+  position: relative;
+}
+
+  .o-overlay__layer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .o-overlay__color {
+    background-color: rgb(0,0,0);
+    opacity: 0.15;
+  }

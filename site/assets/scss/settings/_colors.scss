@@ -1,0 +1,45 @@
+
+// Literal palette
+
+$color-primary:               #4bb8ce;
+$color-secondary:             #2f4054;
+$color-white:                 #fff;
+
+$colors: (
+  'pale':                 $color-white,
+  'primary':                      $color-primary,
+  'primary-highlight':    lighten($color-primary, 10%),
+  'primary-shadow':       darken( $color-primary, 10%),
+  'secondary':                    $color-secondary,
+  'secondary-highlight':  lighten($color-secondary, 10%),
+  'secondary-shadow':     darken( $color-secondary, 10%),
+  'grey-light':           desaturate($color-primary, 100%),
+  'grey-dark':            desaturate($color-secondary, 100%),
+  'tint':                 #eee,
+  'dark':                 #111,
+  'light':                #ccc,
+);
+
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+
+
+
+
+// Semantic color variables are daisy-chained onto their literal names.
+
+$color-link:                    color(primary);
+$color-link-hover:              color(primary-shadow);
+
+$color-btn:                     color(pale);
+$color-btn-bg:                  color(primary);
+$color-btn-hover-bg:            color(primary-shadow);
+
+$color-band-primary:            color(pale);
+$color-band-primary-bg:         color(primary);
+
+$color-band-secondary:          color(pale);
+$color-band-secondary-bg:       color(secondary);

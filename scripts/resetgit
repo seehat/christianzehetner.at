@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Removing current git files..."
+
+rm -rf .git/            && \
+
+echo "Init new git repo..."
+
+git init                && \
+git add -A
+git commit -m "Initial"

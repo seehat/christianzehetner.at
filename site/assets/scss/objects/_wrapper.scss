@@ -1,0 +1,16 @@
+
+.o-wrapper {
+  padding-left: $unit-small;
+  padding-right: $unit-small;
+
+  @include mq($from: 'md') {
+    padding-left: $unit;
+    padding-right: $unit;
+  }
+}
+
+  @include mq($from: md) {
+    .o-wrapper--1\/2 {
+      max-width: 50vw;
+    }
+  }

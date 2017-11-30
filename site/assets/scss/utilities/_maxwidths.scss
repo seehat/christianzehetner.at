@@ -1,0 +1,6 @@
+$max-width-sizes: ( 800, 400) !default;
+@each $width in $max-width-sizes {
+    .u-max-width-#{$width} {
+        max-width: #{$width}px;
+    }
+}

@@ -1,0 +1,17 @@
+label: Blöcke
+type: structure
+style: table
+fields:
+  caption:
+    label: Titel
+    type: text
+  uid:
+    label: Block
+    type: select
+    options: query
+    required: true
+    query:
+      page: blocks
+      fetch: children
+      value: '{{uid}}'
+      text: '{{title}}'

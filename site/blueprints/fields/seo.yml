@@ -1,0 +1,9 @@
+title: Suchmaschinenoptimierung
+type: group
+fields:
+  tabseo:
+    label: Suchmaschinenoptimierung
+    type:  tabs
+  seo:
+    type:  seo
+    help: So wird die aktuelle Seite ca. als Ergebnis in Suchmaschinen angezeigt. Klicke auf dessen Elemente, um diese zu verändern.

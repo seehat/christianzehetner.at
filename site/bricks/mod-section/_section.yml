@@ -1,0 +1,19 @@
+title: Layout
+pages:
+  hide: true
+  template:
+    - module.text
+files:
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+icon: paragraph
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  modules:
+    label: Module
+    type: sortable
+  sectionsettings: sectionsettings
+  imagesettings: imagesettings

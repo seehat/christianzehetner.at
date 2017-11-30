@@ -1,0 +1,17 @@
+title: Kontaktformular
+pages: false
+files:
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+icon: paragraph
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  text: text
+  toemail:
+    label: Ziel-Email-Adresse
+    type: email
+    help: An welche Adresse sollen Anfragen gesendet werden? - Falls diese Adresse leer ist, wird die Kontaktadresse der Website verwendet.
+  sectionsettings: sectionsettings

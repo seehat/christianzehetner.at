@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+
+/**
+ * Attach our colour palette to some utility classes.
+ */
+
+@each $key, $value in $colors {
+
+  .u-color-#{$key} {
+    color: $value !important;
+  }
+
+  .u-color-#{$key}-bg {
+    background-color: $value !important;
+  }
+
+  .u-color-#{$key}-border {
+    border-color: $value !important;
+  }
+
+}

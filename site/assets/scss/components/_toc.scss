@@ -1,0 +1,31 @@
+
+/*------------------------------------*\
+    #TOC
+\*------------------------------------*/
+
+.c-toc {
+  > ul {
+    margin: 0;
+  }
+  margin-bottom: $unit;
+  @include font-size(14px);
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: color(dark);
+    display: block;
+
+    &:hover {
+      color: color(primary);
+    }
+  }
+}
+
+  .c-toc__enum {
+    color: color(light);
+    font-weight: 300;
+  }
+

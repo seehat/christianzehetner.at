@@ -1,0 +1,28 @@
+
+body.login {
+    background-color: rgb(0, 141, 206);
+}
+
+body.login .modal-content {
+    overflow: visible;
+}
+
+body.login .modal-content:after {
+    position: absolute;
+    bottom: -60px;
+    left: 5px;
+    content: '';
+    display: block;
+    width: 260px;
+    height: 47px;
+    background-image: url('/assets/images/Kreativwerkstatt.png');
+}
+
+.breadcrumb-link[title="_modules"] {
+  display: none;
+}
+
+.dashboard-section {
+  display: block;
+  break-inside: avoid;
+}

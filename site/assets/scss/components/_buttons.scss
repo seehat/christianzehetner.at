@@ -1,0 +1,145 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin:  0; /* [4] */
+  cursor: pointer; /* [5] */
+  overflow: visible; /* [6] */
+  padding: $unit-small $unit;
+  transition: $global-transition;
+  border-radius: $global-radius;
+  border: none;
+
+  .fa {
+    width: 1.28571em;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+
+.c-btn--default {
+  background-color: $color-btn-bg;
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [4] */
+    color: $color-btn;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover-bg;
+  }
+}
+
+
+/**
+ * 1. Artificially increase specificity to combat leaky `.band--* a {}` rules.
+ */
+
+.c-btn--inverted {
+  background-color: $color-btn;
+
+  &#{&}, /* [1] */
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $color-btn-bg;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-btn;
+  }
+
+}
+
+
+.c-btn--round {
+  border-radius: $unit;
+}
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-btn--small {
+  padding: $unit-tiny $unit-small;
+}
+
+.c-btn--large {
+  padding: $unit $unit-large;
+}
+
+
+
+
+
+/* Ghost buttons
+   ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+$btn-ghost-border-width: 2px;
+
+.c-btn--ghost {
+  border: $btn-ghost-border-width solid currentColor;
+  padding: ($inuit-global-spacing-unit-small - $btn-ghost-border-width) ($inuit-global-spacing-unit - $btn-ghost-border-width);
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+  }
+
+  &.c-btn--small {
+    padding: ($inuit-global-spacing-unit-tiny - $btn-ghost-border-width) ($inuit-global-spacing-unit-small - $btn-ghost-border-width);
+  }
+
+  &.c-btn--large {
+    padding: ($inuit-global-spacing-unit - $btn-ghost-border-width) ($inuit-global-spacing-unit-large - $btn-ghost-border-width);
+  }
+
+  &.c-btn--default {
+    color: $color-btn-bg;
+
+    &:hover,
+    &:focus {
+      color: $color-btn-hover-bg;
+    }
+
+  }
+
+}

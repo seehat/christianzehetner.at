@@ -1,0 +1,18 @@
+.c-contactline {
+    background-color: #999;
+    color: white;
+    @include font-size(14px);
+
+    a {
+      color: white;
+
+      &:hover {
+        color: #555;
+        text-decoration: none;
+      }
+    }
+}
+
+  .c-contactline__item {
+      margin-right: $unit-tiny;
+  }

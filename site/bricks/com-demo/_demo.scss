@@ -1,0 +1,23 @@
+
+.c-demo {
+  border: 2px solid color(tint);
+  border-radius: 3px;
+  margin-bottom: $unit;
+
+  & pre {
+    margin-bottom: 0;
+  }
+}
+
+  .c-demo__item--preview {
+    padding: $unit;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }

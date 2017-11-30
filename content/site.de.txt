@@ -1,0 +1,123 @@
+Title: Christian Zehetner
+
+----
+
+Description: 
+
+----
+
+Keywords: 
+
+----
+
+Contact: 
+
+Nadelbach 23
+3100 St. Pölten
+
+----
+
+Maintenance: off
+
+----
+
+Maintenancetext: 
+
+# Hey,
+
+wir sind gerade dabei, unsere Inhalte und Angebote zu verbessern. Bitte schau später wieder vorbei. Wir sind bald wieder da.
+
+In der Zwischenzeit kannst du uns hier erreichen:
+
+----
+
+Logo: 
+
+----
+
+Footertext: © 2017 Christian Zehetner - (link: /impressum text: Impressum)
+
+----
+
+Colorprimary: #1000ed
+
+----
+
+Colorsecondary: #20bf38
+
+----
+
+Fontheadlines: 0
+
+----
+
+Fontparagraph: 0
+
+----
+
+Facebookurl: http://facebook.com/christianzehetner
+
+----
+
+Gacode: 
+
+----
+
+Phone: 
+
+----
+
+Email: 
+
+----
+
+Locations: 
+
+
+----
+
+Twitterurl: 
+
+----
+
+Facebook: 
+
+----
+
+Twitter: 
+
+----
+
+Linkedin: 
+
+----
+
+Instagram: 
+
+----
+
+Github: 
+
+----
+
+Medium: 
+
+----
+
+Youtube: 
+
+----
+
+Vimeo: 
+
+----
+
+Snapchat: 
+
+----
+
+Soundcloud: 
+
+----
+
+Spotify: 

@@ -1,0 +1,17 @@
+.modules-layout__preview {
+  border-bottom: 1px solid #ddd;
+}
+
+.modules-layout__preview:empty {
+  display: none;
+}
+
+.modules-layout__preview--bottom {
+  border-bottom: none;
+  border-top: 1px solid #ddd;
+}
+
+.sortable--blocks[data-visible=false] .sortable-layout__icon,
+.sortable--blocks[data-visible=false] .sortable-layout__title {
+  color: #000;
+}

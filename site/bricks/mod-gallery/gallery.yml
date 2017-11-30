@@ -1,0 +1,32 @@
+title: Gallerie
+pages: false
+icon: image
+files:
+  type: image
+  sortable: true
+  fields:
+    caption:
+      label: Beschreibung
+      type: text
+    focus:
+      label: Fokus
+      type: focus
+fields:
+  reveal: reveal
+  tabgeneral:
+    extends: tabcontent
+    label: Gallerie
+  margin:
+    label: Bildabstand
+    type: radio
+    columns: 3
+    default: none
+    required: true
+    options:
+      none: Keiner
+      tiny: Winzig
+      small: Klein
+      middle: Mittel
+      large: Groß
+      huge: Riesig
+  sectionsettings: sectionsettings

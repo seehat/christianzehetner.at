@@ -1,0 +1,19 @@
+
+code, kbd, samp {
+  color: color(light);
+  font-style: italic;
+
+  pre & {
+    color: color(pale);
+    font-size: 14px;
+    font-style: normal;
+  }
+
+}
+
+pre {
+  background-color: color(grey-dark);
+  padding: $unit;
+  border-radius: $global-radius;
+  overflow: auto;
+}

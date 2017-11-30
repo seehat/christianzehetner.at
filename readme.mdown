@@ -1,0 +1,13 @@
+To quickly install this boilerplate, run the following commands in your project folder:
+
+## Install Dev Environment
+
+    $ git clone git@nadelbach.at:tpl/massive . && ./scripts/dev
+
+## Install Production Files
+
+    $ git clone git@nadelbach.at:tpl/massive . && ./scripts/prod
+
+## Add new clean git setup
+
+    $ ./scripts/resetgit

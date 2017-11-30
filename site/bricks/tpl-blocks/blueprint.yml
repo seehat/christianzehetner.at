@@ -1,0 +1,20 @@
+title: Blöcke
+pages:
+  hide: true
+  template:
+     - block
+options:
+  delete: false
+  preview: false
+  status: false
+  template: false
+  url: false
+files: false
+icon: database
+fields:
+  blocks:
+    label: Blöcke
+    type: blocks
+  hidebar:
+    type: hidebar
+

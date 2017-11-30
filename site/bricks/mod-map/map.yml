@@ -1,0 +1,30 @@
+title: Landkarte
+pages: false
+icon: map
+files:
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+fields:
+  reveal: reveal
+  tabgeneral:
+    extends: tabcontent
+    label: Landkarte-Einstellungen
+  locations:
+    label: Orte
+    type: structure
+    style: table
+    modalsize: large
+    fields:
+      text:
+        label: Text
+        type: textarea
+      location:
+        label: Ort
+        type: map
+        center:
+          lat: 48.2081743
+          lng: 16.37381890000006
+          zoom: 14
+  sectionsettings: sectionsettings

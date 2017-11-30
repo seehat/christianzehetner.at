@@ -1,0 +1,13 @@
+title: Abstand
+pages: false
+files: false
+icon: arrows-v
+fields:
+  reveal: reveal
+  height:
+    label: Abstand
+    type: rangeslider
+    min: 0
+    max: 5
+    step: 1
+    default: 4

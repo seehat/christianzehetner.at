@@ -1,0 +1,25 @@
+Tabgeneral: 
+
+----
+
+Title: Imprint
+
+----
+
+Text: 
+
+----
+
+Slideshow: 
+
+----
+
+Aside: 
+
+----
+
+Tabseo: 
+
+----
+
+Seo: 

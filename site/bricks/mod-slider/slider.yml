@@ -1,0 +1,73 @@
+title: Slider
+pages: false
+icon: image
+files:
+  type: image
+  sortable: true
+  fields:
+    caption:
+      label: Beschreibung
+      type: textarea
+    focus:
+      label: Fokus
+      type: focus
+fields:
+  reveal: reveal
+  tabgeneral:
+    extends: tabcontent
+    label: Slider-Einstellungen
+  ratio:
+    label: Seitenverhältnis
+    type: text
+    required: true
+    default: 16/6
+    validate:
+      match: "/[0-9]\/[0-9]+/"
+    width: 1/3
+    help: Format 16/9
+  autoplay:
+    label: Autoplay-Zeit in Milisekunden
+    type: number
+    required: true
+    default: 4000
+    width: 1/3
+    help: Wenn 0 eingegeben wird, wird Autoplay deaktiviert.
+  transition:
+    label: Übergangsanimation
+    type: select
+    options:
+      slide: verschieben
+      crossfade: überblenden
+      dissolve: auflösen
+    required: true
+    default: slide
+    width: 1/3
+  transitionduration:
+    label: Übergangszeit in Milisekunden
+    type: number
+    required: true
+    default: 1000
+    width: 1/2
+  nav:
+    label: Navigation
+    type: select
+    options:
+      false: Keine
+      thumbs: Thumbnails
+      dots: Punkte
+    required: true
+    default: false
+    width: 1/2
+  loop:
+    label: Fotos wiederholen
+    type: checkbox
+    text: Wenn das Ende erreicht wird, wieder von vorne beginnen.
+    default: true
+    width: 1/2
+  fullheight:
+    label: Volle Höhe
+    type: checkbox
+    text: Slider in voller Höhe anzeigen
+    default: false
+    width: 1/2
+  sectionsettings: sectionsettings

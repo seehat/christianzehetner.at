@@ -1,0 +1,44 @@
+
+blockquote {
+  margin: 20px auto;
+  padding: 20px 40px;
+  display: block;
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  text-align: center;
+  font-size: 26px;
+
+  &:before {
+    content: "  ";
+    font-family: "Fontawesome";
+    display: block;
+    color: color(primary);
+    font-size: 72px;
+  }
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote p:first-child {
+  margin-top: 0;
+}
+
+cite {
+  font-size: 18px;
+  color: color(primary);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  &:before {
+    display: block;
+    color: color(primary);
+    font-size: 26px;
+    position: relative;
+    bottom: -15px;
+    margin-top: -15px;
+    content: " — ";
+  }
+}

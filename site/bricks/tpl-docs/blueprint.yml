@@ -1,0 +1,18 @@
+title: Doku
+pages: true
+hide: true
+files:
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+fields:
+  tabgeneral:
+    label: Inhalt
+    type:  tabs
+  title: title
+  text: text
+  slideshow:
+    label: Slideshow
+    type: images
+  seo: seo

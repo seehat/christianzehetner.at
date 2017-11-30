@@ -1,0 +1,11 @@
+title: Training
+pages: false
+files:
+  sortable: true
+fields:
+  title:
+    label: Title
+    type: title
+  text:
+    label: Text
+    type: textarea

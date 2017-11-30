@@ -1,0 +1,10 @@
+title: Wartungsmodus
+pages: false
+files: true
+hide: true
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  title:
+    label: Titel
+    type:  text

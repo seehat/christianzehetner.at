@@ -1,0 +1,12 @@
+title: Module
+hide: true
+pages:
+  hide: true
+  template:
+    - module.text
+    - module.map
+    - module.gallery
+    - module.section
+    - module.slider
+    - module.spacer
+

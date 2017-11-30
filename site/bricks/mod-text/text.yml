@@ -1,0 +1,30 @@
+title: Text
+pages: false
+files:
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+icon: paragraph
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  text: text
+  align:
+    label: Ausrichtung
+    type: radio
+    default: left
+    columns: 3
+    options:
+      left: <i class="fa fa-align-left"></i>
+      center: <i class="fa fa-align-center"></i>
+      right: <i class="fa fa-align-right"></i>
+  textcolorswatch:
+    label: Textfarbe
+    type: radio
+    default: dark
+    columns: 2
+    options:
+      dark: Dunkel
+      light: Hell
+  sectionsettings: sectionsettings

@@ -1,0 +1,130 @@
+title: Bereichseinstellungen
+type: group
+fields:
+  boxsettings:
+    label: Einstellungen
+    type: tabs
+  layout:
+    label: Layout
+    type: fieldtoggle
+    required: true
+    columns: 2
+    options:
+      off: Standard
+      sidebyside: Nebeneinander
+      circle: Rundes Bild
+      overlay: Überlappend
+    default: 'off'
+    show:
+      off: width spacing
+      sidebyside: img imagetransparency contentorientationhorizontal contentorientationvertical contentanimation imageanimation
+      circle: img imagetransparency contentorientationhorizontal contentanimation imageanimation
+      overlay: spacing img imagetransparency contentposition contentanimation imageanimation
+    hide:
+      off: img imagetransparency contentorientationhorizontal contentorientationvertical contentposition contentanimation imageanimation
+      sidebyside: width spacing contentposition
+      circle: width spacing contentposition contentorientationvertical
+      overlay: width contentorientationhorizontal contentorientationvertical
+  width:
+    label: Breite
+    type: radio
+    width: 1/3
+    columns: 1
+    options:
+      default: Standard
+      halve: Halbe Breite
+      full: Volle Breite
+    default: 'full'
+  height:
+    label: Höhe
+    type: radio
+    columns: 1
+    required: true
+    default: normal
+    width: 1/3
+    options:
+      normal: Normal
+      viewport: Fensterhöhe
+  bgcolor:
+    label: Hintergrundfarbe
+    type:  color
+    width: 1/3
+  spacing:
+    label: Randabstand
+    type: radio
+    columns: 3
+    default: default
+    options:
+      default: Standard
+      flush: Keiner
+      tiny: Winzig
+      small: Klein
+      large: Groß
+      huge: Riesig
+  img:
+    label: Bild
+    type: image
+    width: 1/2
+  imagetransparency:
+    label: Transparenz
+    type: rangeslider
+    min: 0.1
+    max: 1
+    step: 0.1
+    default: 1
+    width: 1/2
+  contentorientationhorizontal:
+    label: Horizontale Ausrichtung
+    type: radio
+    columns: 1
+    default: 'left'
+    width: 1/2
+    options:
+      left: Links
+      right: Rechts
+  contentorientationvertical:
+    label: Vertikale Ausrichtung
+    type: radio
+    columns: 1
+    default: 'center'
+    width: 1/2
+    options:
+      top: Oben
+      center: Mitte
+      bottom: Unten
+  contentposition:
+    label: Inhalts-Position
+    type: radio
+    columns: 3
+    default: 'middle-center'
+    options:
+      top-left:
+      top-center: <i class="fa fa-long-arrow-up"></i>
+      top-right:
+      middle-left: <i class="fa fa-long-arrow-left"></i>
+      middle-center: <i class="fa fa-stop-circle-o"></i>
+      middle-right: <i class="fa fa-long-arrow-right"></i>
+      bottom-left:
+      bottom-center: <i class="fa fa-long-arrow-down"></i>
+      bottom-right:
+  contentanimation:
+    label: Inhaltsanimation
+    type: select
+    width: 1/2
+    options:
+      onscroll-content-fade-in: Fade in
+      onscroll-content-fade-up: Fade nach oben
+      onscroll-content-fade-down: Fade nach unten
+      onscroll-content-fade-left: Fade nach links
+      onscroll-content-fade-right: Fade nach rechts
+  imageanimation:
+    label: Bildanimation
+    type: select
+    width: 1/2
+    options:
+      onscroll-image-fade-in: Fade in
+      onscroll-image-fade-up: Fade nach oben
+      onscroll-image-fade-down: Fade nach unten
+      onscroll-image-fade-left: Fade nach links
+      onscroll-image-fade-right: Fade nach rechts
+

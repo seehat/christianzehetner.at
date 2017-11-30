@@ -1,0 +1,11 @@
+title: Fehler
+pages: false
+files: true
+hide: true
+fields:
+  title:
+    label: Titel
+    type:  text
+  text:
+    label: Text
+    type:  textarea

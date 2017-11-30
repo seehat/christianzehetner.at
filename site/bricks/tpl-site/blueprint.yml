@@ -1,0 +1,130 @@
+title: Webseite
+pages:
+  template:
+    - default
+    - builder
+    - redirect
+files: true
+fields:
+  sectiongeneral:
+    label: Seite
+    type: tabs
+  title:
+    extends: title
+    width: 1/2
+  logo:
+    label: Logo
+    type: image
+    width: 1/2
+    translate: false
+  footertext:
+    label: Fußzeile
+    extends: text
+  locations:
+    label: Orte
+    type: structure
+    style: table
+    modalsize: large
+    translate: false
+    fields:
+      text:
+        label: Text
+        type: textarea
+      location:
+        label: Ort
+        type: map
+        center:
+          lat: 48.2081743
+          lng: 16.37381890000006
+          zoom: 14
+  sectioncontact:
+    label: Kontakt
+    type: headline
+  phone:
+    label: Telefon
+    type: text
+    width: 1/2
+    translate: false
+  email:
+    label: E-Mail
+    type: email
+    width: 1/2
+    translate: false
+  sectionmaintenance:
+    label: Wartungsmodus
+    type: tabs
+  maintenance:
+    label: Wartungsmodus aktivieren
+    type: fieldtoggle
+    default: "off"
+    options:
+      "on": "Aktiviert"
+      "off": "Deaktiviert"
+    show:
+      "on": "maintenancetext"
+    hide:
+      "off": "maintenancetext"
+  maintenancetext:
+    label: Wartungsmodus-Text
+    extends: text
+  sectionsocialmedia:
+    label: Social Media
+    type: tabs
+  facebook:
+    label: Facebook
+    type: text
+    icon: facebook-square
+    width: 1/4
+  twitter:
+    label: Twitter
+    type: text
+    icon: twitter-square
+    width: 1/4
+  linkedin:
+    label: LinkedIn
+    type: text
+    icon: linkedin-square
+    width: 1/4
+  instagram:
+    label: Instagram
+    type: text
+    icon: instagram
+    width: 1/4
+  github:
+    label: Github
+    type: text
+    icon: github
+    width: 1/4
+  medium:
+    label: Medium
+    type: text
+    icon: medium
+    width: 1/4
+  youtube:
+    label: Youtube
+    type: text
+    icon: youtube
+    width: 1/4
+  vimeo:
+    label: Vimeo
+    type: text
+    icon: vimeo-square
+    width: 1/4
+  soundcloud:
+    label: Soundcloud
+    type: text
+    icon: soundcloud
+    width: 1/4
+  spotify:
+    label: Spotify
+    type: text
+    icon: spotify
+    width: 1/4
+  sectionanalytics:
+    label: Statistik
+    type: tabs
+  gacode:
+    label: Google Analytics Code
+    type: textarea
+    help: Füge den Google Analytics Code hier ein
+    buttons: false

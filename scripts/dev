@@ -1,0 +1,14 @@
+#!/bin/sh
+
+echo "Installing clean project..."
+
+rm -rf .git/            && \
+git init                && \
+
+echo "Installing npm and bower dependencies..."
+yarn install
+
+echo "Installing kirby and panel via composer..."
+composer install
+
+echo "project successfully installed"

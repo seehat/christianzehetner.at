@@ -1,0 +1,21 @@
+
+.uniform__potty {
+  position: absolute;
+  left: -9999px;
+}
+
+.c-form {
+  input, textarea {
+    width: 100%;
+    padding: $unit-small;
+    border: 1px solid color(tint);
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+}
+
+  .c-form__element {
+    margin-bottom: $unit-small;
+  }

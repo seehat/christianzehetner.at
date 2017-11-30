@@ -1,0 +1,8 @@
+{
+    "name": "kirby-imageconverter",
+    "version": "1.0",
+    "description": "This plugin for Kirby 2 allows converting images to rgb and resizing them down for web use. ",
+    "type": "kirby-plugin",
+    "license": "GPL-3.0",
+    "author": "mgf <http://mgf.at>"
+}

@@ -1,0 +1,18 @@
+
+.c-icon--service {
+  font-size: 36px;
+  color: color(primary);
+  display: block;
+  margin-bottom: -$unit;
+}
+
+
+.c-iconlist {
+  ul {
+    list-style: none;
+  }
+
+  > ul {
+    margin-left: 0;
+  }
+}

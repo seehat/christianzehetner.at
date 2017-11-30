@@ -1,0 +1,20 @@
+
+.map {
+  height: 100%;
+  min-height: 250px;
+}
+
+.o-section--module-map.o-section--height-viewport {
+  .o-section__content, #map {
+    min-height: 100vh;
+  }
+}
+
+.leaflet-popup {
+  font-size: 14px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+  box-shadow: 0 0px 10px rgba(0,0,0,0.1);
+}

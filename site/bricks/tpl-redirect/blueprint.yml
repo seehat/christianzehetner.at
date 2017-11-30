@@ -1,0 +1,10 @@
+title: Weiterleitung
+pages: true
+files: false
+icon: mail-forward
+fields:
+  title: title
+  redirect:
+    type: page
+    label: Web-Adresse oder interne Seite
+    help: Gib hier bitte enweder den Namen einer Unterseite oder die Adresse einer externen Website ein. Wenn du das Feld <strong>leer</strong> lässt, wird automatisch zur ersten verfügbaren Unterseite gesprungen.

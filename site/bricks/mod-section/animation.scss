@@ -1,0 +1,50 @@
+// onscroll-content-fadein
+
+$events: (
+  // 'load': 'body.is-loading &',
+  'scroll': '&.is-inactive'
+);
+
+$animatables: (
+  'content',
+  'image'
+);
+
+$transforms: (
+  'fade-up': translateY(1rem),
+  'fade-down': translateY(-1rem),
+  'fade-left': translateX(1rem),
+  'fade-right': translateX(-1rem),
+  'fade-in': null
+);
+
+
+@each $event-name, $condition in $events {
+
+  @each $animatable in $animatables {
+
+    @each $transform-name, $transform in $transforms {
+
+      .o-section--on#{$event-name}-#{$animatable}-#{$transform-name} {
+        .o-section__#{$animatable} {
+          transition: opacity #{$global-transition} ease-in-out, transform #{$global-transition} ease-in-out;
+
+          @if $animatable == 'image' {
+            transition-delay: 0.20s;
+          }
+        }
+
+        #{$condition} {
+          .o-section__#{$animatable} {
+            transform: $transform;
+            opacity: 0!important;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

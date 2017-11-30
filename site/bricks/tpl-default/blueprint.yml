@@ -1,0 +1,20 @@
+title: Einfache Seite
+pages: true
+files:
+  sortable: true
+  fields:
+    focus:
+      label: Fokus
+      type: focus
+fields:
+  reveal: reveal
+  tabgeneral: tabcontent
+  title: title
+  text: text
+  tabaside:
+    label: Sidebar
+    type:  tabs
+  aside:
+    extends: blockselector
+    label: Blöcke
+  seo: seo

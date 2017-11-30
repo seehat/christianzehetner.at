@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Installing kirby and panel via composer..."
+
+[ -f ~/bin/composer ] && echo "composer available." || curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=$HOME/bin
+composer install
+
+[ ! -d files/thumbs ] && mkdir files/thumbs/
+[ ! -d files/cache ] && mkdir files/cache/
+[ ! -d site/accounts ] && mkdir site/accounts/
+
+php scripts/createadmin.php
+
+echo "project successfully installed"

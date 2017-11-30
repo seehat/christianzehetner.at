@@ -1,0 +1,14 @@
+{
+    "name": "kirby",
+    "require": {
+        "mnsami/composer-custom-directory-installer": "1.1.*",
+        "getkirby/kirby": "~2.5.7",
+        "getkirby/panel": "~2.5.7"
+    },
+    "extra": {
+      "installer-paths": {
+        "./kirby": ["getkirby/kirby"],
+        "./panel": ["getkirby/panel"]
+      }
+    }
+}
