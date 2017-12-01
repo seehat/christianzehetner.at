@@ -16,10 +16,12 @@
   </div>
 
   <div class="c-footer">
-      <?php if ($site->footertext()->isNotEmpty()): ?>
-        <?php echo $site->footertext()->kirbytextRaw(); ?>
-      <?php endif ?>
-      <?php snippet("sociallinks") ?>
+    Mit <i class="fa fa-heart" title="für Karin"></i> gemacht -
+
+    <?php if ($site->footertext()->isNotEmpty()): ?>
+      <?php echo $site->footertext()->kirbytextRaw(); ?>
+    <?php endif ?>
+    <?php snippet("sociallinks") ?>
   </div>
 
 </div>

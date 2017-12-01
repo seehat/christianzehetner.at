@@ -35,7 +35,7 @@ Logo:
 
 ----
 
-Footertext: © 2017 Christian Zehetner - (link: /impressum text: Impressum)
+Footertext: (link: /impressum text: Impressum)
 
 ----
 
@@ -72,7 +72,6 @@ Email:
 ----
 
 Locations: 
-
 
 ----
 

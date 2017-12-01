@@ -11,4 +11,7 @@ fields:
   tabgeneral: tabcontent
   title: title
   text: text
+  ingredients:
+    label: Zutaten
+    extends: text
   seo: seo
