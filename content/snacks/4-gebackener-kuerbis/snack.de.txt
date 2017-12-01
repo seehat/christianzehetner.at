@@ -19,3 +19,15 @@ Tabseo:
 ----
 
 Seo: 
+
+----
+
+Tags: warm,kalt
+
+----
+
+Ingredients: 
+
+----
+
+Time: 10

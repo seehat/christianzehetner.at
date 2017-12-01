@@ -11,6 +11,14 @@ fields:
   tabgeneral: tabcontent
   title: title
   text: text
+  tags:
+    label: Tags
+    type: tags
+    width: 1/2
+  time:
+    label: Zubereitungszeit / min
+    type: number
+    width: 1/2
   ingredients:
     label: Zutaten
     extends: text
