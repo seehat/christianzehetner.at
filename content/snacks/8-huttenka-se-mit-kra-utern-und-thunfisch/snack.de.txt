@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -14,11 +14,11 @@ Text: Hüttenkäse ist sehr eiweißreich und eine gute Nährstoffquelle.  Das Be
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
@@ -26,8 +26,8 @@ Tags: eiweiß
 
 ----
 
-Time: 5
+Duration: 5
 
 ----
 
-Ingredients: 
+Ingredients:

@@ -15,7 +15,7 @@ fields:
     label: Tags
     type: tags
     width: 1/2
-  time:
+  duration:
     label: Zubereitungszeit / min
     type: number
     width: 1/2

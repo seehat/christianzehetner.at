@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -10,15 +10,15 @@ Title: Gemüsesticks
 
 ----
 
-Text: 
+Text:
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
@@ -26,8 +26,8 @@ Tags: kalt
 
 ----
 
-Time: 5
+Duration: 5
 
 ----
 
-Ingredients: 
+Ingredients:

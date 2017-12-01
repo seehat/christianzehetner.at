@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -14,11 +14,11 @@ Text: Nüsse sind einer der bequemsten Snacks, den du für unterwegs mitnehmen k
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
@@ -26,8 +26,8 @@ Tags: eiweiß
 
 ----
 
-Time: 1
+Duration: 1
 
 ----
 
-Ingredients: 
+Ingredients:

@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -14,20 +14,20 @@ Text: Voll mit Eiweiß, Vitaminen und Mineralien gehören Eier zu den gesündest
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
-Tags: 
+Tags:
 
 ----
 
-Time: 5
+Duration: 5
 
 ----
 
-Ingredients: 
+Ingredients:

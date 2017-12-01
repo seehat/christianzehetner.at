@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -10,15 +10,15 @@ Title: Avocado mit Ei
 
 ----
 
-Text: 
+Text:
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
@@ -30,4 +30,4 @@ Tags: kalt,eiweiß,fett
 
 ----
 
-Time: 5
+Duration: 5

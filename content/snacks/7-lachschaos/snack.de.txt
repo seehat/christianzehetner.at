@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -10,15 +10,15 @@ Title: Lachschaos
 
 ----
 
-Text: 
+Text:
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
@@ -26,8 +26,8 @@ Tags: eiweiß
 
 ----
 
-Time: 10
+Duration: 10
 
 ----
 
-Ingredients: 
+Ingredients:

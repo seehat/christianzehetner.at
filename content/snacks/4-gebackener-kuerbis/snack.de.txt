@@ -1,8 +1,8 @@
-Reveal: 
+Reveal:
 
 ----
 
-Tabgeneral: 
+Tabgeneral:
 
 ----
 
@@ -10,15 +10,15 @@ Title: Gebackener Kürbis
 
 ----
 
-Text: 
+Text:
 
 ----
 
-Tabseo: 
+Tabseo:
 
 ----
 
-Seo: 
+Seo:
 
 ----
 
@@ -26,8 +26,8 @@ Tags: warm,kalt
 
 ----
 
-Ingredients: 
+Ingredients:
 
 ----
 
-Time: 10
+Duration: 10
