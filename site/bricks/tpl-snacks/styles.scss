@@ -8,3 +8,88 @@
 //     opacity: 0;
 //   }
 // }
+
+.c-snacks {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  .c-footer {
+    padding: 0;
+  }
+}
+
+.c-snacks__main {
+  flex: 1 1 auto;
+}
+
+.c-sidebar {
+  background-color: color(tint);
+}
+
+.c-filter {
+  padding: $unit-small;
+
+  @include mq($until: md) {
+
+    &,
+    label {
+      font-size: 14px;
+      line-height: 1.3em;
+    }
+  }
+}
+
+  .c-filter__element {
+    margin-bottom: $unit-small;
+  }
+
+  .c-filter__tags {
+    column-count: 2;
+    column-gap: $unit-tiny;
+
+    @include mq ($from: lg) {
+      column-count: 1;
+    }
+  }
+
+.c-main {
+  padding: $unit-small;
+}
+
+.o-input {
+  padding: $unit-tiny;
+  width: 100%;
+}
+
+
+
+
+/* The slider itself */
+.c-rangeslider {
+  width: 100% ;
+  appearance: none;
+  height: $unit-tiny; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+/* Mouse-over effects */
+.c-rangeslider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */
+.c-rangeslider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}
+

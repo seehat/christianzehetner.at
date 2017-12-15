@@ -1,53 +1,8 @@
-
-// Vue.use(Vuex);
-
-// const store = new Vuex.Store({
-//   state: {
-//     count: 0
-//   },
-//   mutations: {
-//     increment: function (state) {
-//       state.count++;
-//     }
-//   }
-// });
-
-// Vue.component('vue-counter', {
-//   template: '<div>{{ count }}</div>',
-//   computed: {
-//     count: function () {
-//       return this.$store.state.count;
-//     }
-//   },
-//   methods: {
-//     increment: function () {
-//       this.$store.commit('increment')
-//     },
-//     decrement: function () {
-//       this.$store.commit('decrement')
-//     }
-//   }
-// })
-
-// var app = new Vue({
-//   el: '.js-snacks',
-//   data: {
-//     greeting: 'Welcome to your Vue.js app!',
-//     docsURL: 'http://vuejs.org/guide/',
-//     discordURL: 'https://chat.vuejs.org',
-//     forumURL: 'http://forum.vuejs.org/'
-//   },
-//   store: {}
-// });
-
-
-
-
 $(function () {
 
   var $inputs = $('.js-tagsfilter input');
 
-  var entries = new List('entries', {
+  var entries = new List('snacks', {
     valueNames: ['tags', 'title', 'duration']
   });
 
@@ -57,6 +12,7 @@ $(function () {
     });
 
     var duration = $('.js-filter-duration').val();
+    $('.js-duration-value').html("<= " + duration + " min");
 
     var tagsFilter = function (item) {
       var result = true;
@@ -85,6 +41,7 @@ $(function () {
   $('.js-filter-tags input[name=tags]').change(updateList);
   $('.js-filter-duration').on('input', updateList);
 
+  updateList();
 
 
   // routie(':category', function (category) {

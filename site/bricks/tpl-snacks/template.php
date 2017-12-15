@@ -1,29 +1,40 @@
 <?php snippet('htmlheader') ?>
 
-<div id="entries" class="c-snacks js-snacks js-entries">
+<div id="snacks" class="c-snacks js-snacks">
 
-  <div class="c-vue-loading" v-cloak>
+  <div class="c-snacks__topbar">
+    <h1 class="u-padding-small u-margin-bottom-small"><?php echo $page->title(); ?></h1>
+  </div>
 
-    <div class="c-main u-padding-small">
-      <h1><?php echo $page->title(); ?></h1>
+  <div class="c-snacks__main o-layout o-layout--fullheight o-layout--small">
 
+    <div class="c-sidebar o-layout__item u-2/5@md u-1/5@lg">
       <div class="c-filter">
-        <input class="search" placeholder="Suche nach..." />
-
-        <ul class="o-layout js-filter-tags">
-          <?php foreach ($tags as $tag): if ($tag == "") continue; ?>
-            <li class="o-layout__item u-1/4">
-              <label>
-                <input type="checkbox" name="tags" value="<?php echo str::slug($tag); ?>">
-                <?php echo $tag; ?>
-              </label>
-            </li>
-          <?php endforeach; ?>
+        <div class="c-filter__element">
+          <input type="text" class="o-input search" placeholder="Suche nach..." />
         </div>
 
-        <input class="c-filter__duration js-filter-duration" type="range" min="<?php echo $durationmin ?>" max="<?php echo $durationmax ?>" step="1" value="1">
-      </div>
+        <div class="c-filter__element">
+          <ul class="c-filter__tags o-layout js-filter-tags">
+            <?php foreach ($tags as $tag): if ($tag == "") continue; ?>
+              <li class="o-layout__item">
+                <label>
+                  <input type="checkbox" name="tags" value="<?php echo str::slug($tag); ?>">
+                  <?php echo ucfirst($tag); ?>
+                </label>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
 
+        <div class="c-filter__element">
+          <label for="duration">Dauer <span class="js-duration-value"></span></label>
+          <input id="duration" name="duration" class="c-rangeslider o-range c-filter__duration js-filter-duration" type="range" min="<?php echo $durationmin ?>" max="<?php echo $durationmax ?>" step="1" value="<?php echo $durationmax ?>">
+        </div>
+      </div>
+    </div>
+
+    <div class="c-main o-layout__item u-3/5@md u-4/5@lg">
       <?php echo $page->text()->kirbytext(); ?>
 
       <div class="o-layout o-layout--small list">
