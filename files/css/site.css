@@ -6022,6 +6022,9 @@ figure.html-video[loaded="true"]:after {
   .c-snacks .c-footer {
     padding: 0; }
 
+.c-snacks__topbar {
+  background-color: #ccc; }
+
 .c-snacks__main {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto; }
@@ -6052,7 +6055,8 @@ figure.html-video[loaded="true"]:after {
 
 .o-input {
   padding: 6px;
-  width: 100%; }
+  width: 100%;
+  border: none; }
 
 /* The slider itself */
 .c-rangeslider {
@@ -6089,6 +6093,16 @@ figure.html-video[loaded="true"]:after {
   cursor: pointer;
   /* Cursor on hover */
   border-radius: 50%; }
+
+.c-rangeslider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #4CAF50;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */ }
 
 /* ==========================================================================
    #CLEARFIX

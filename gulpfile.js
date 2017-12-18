@@ -99,7 +99,7 @@ gulp.task('default', [
 gulp.task('watch', [], function() {
 
     browserSync.init({
-        proxy: path.basename(__dirname) + ".dev",
+        proxy: path.basename(__dirname) + ".test",
         open: false,
         notify: false
     });

@@ -20,6 +20,10 @@
   }
 }
 
+.c-snacks__topbar {
+  background-color: color(light);
+}
+
 .c-snacks__main {
   flex: 1 1 auto;
 }
@@ -61,6 +65,7 @@
 .o-input {
   padding: $unit-tiny;
   width: 100%;
+  border: none;
 }
 
 
@@ -93,3 +98,9 @@
     border-radius: 50%;
 }
 
+.c-rangeslider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
