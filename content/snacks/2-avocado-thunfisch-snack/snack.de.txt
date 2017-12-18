@@ -12,6 +12,11 @@ Title: Avocado Thunfisch Snack
 
 Text: 
 
+- Avocado würfeln
+- Thunfisch zerkleiner
+- alles miteinander vermischen
+- mit Zitrone und Gewürzen abschmecken
+
 ----
 
 Tabseo: 
@@ -27,6 +32,9 @@ Tags: fett,eiweiß,fisch,kalt
 ----
 
 Ingredients: 
+
+- 1 Avocado
+- 1 Dose Thunfisch
 
 ----
 
