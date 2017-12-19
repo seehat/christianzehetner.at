@@ -46,7 +46,7 @@
                 <span class="u-hide duration"><?php echo $p->duration() ?></span>
                 <span class="u-hide tags"><?php echo str::slug($p->tags()); ?></span>
                 <span class="u-hide duration"><?php echo $p->duration(); ?></span>
-                <img src="<?php echo $p->images()->first()->focusCrop(800, 800)->url(); ?>" title="<?php echo $p->title()->html() ?>" alt="<?php echo $p->title()->html() ?>">
+                <img src="<?php echo $p->images()->first()->focusCrop(400, 400)->url(); ?>" title="<?php echo $p->title()->html() ?>" alt="<?php echo $p->title()->html() ?>">
               </a>
             </div>
           <?php endforeach ?>

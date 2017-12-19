@@ -20,7 +20,7 @@
 
     <div class="o-layout__item u-2/5@md">
 
-      <img src="<?php echo $page->images()->first()->url() ?>" alt="">
+      <img src="<?php echo $page->images()->first()->width(600)->url() ?>" alt="">
 
     </div>
 
