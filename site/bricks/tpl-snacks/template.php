@@ -3,7 +3,7 @@
 <div id="snacks" class="c-snacks js-snacks">
 
   <div class="c-snacks__topbar">
-    <h1 class="u-padding-small u-margin-bottom-none"><?php echo $page->title(); ?></h1>
+    <h1 class="u-h2 u-padding-small u-margin-bottom-none"><?php echo $page->title(); ?></h1>
   </div>
 
   <div class="c-snacks__main o-layout o-layout--fullheight o-layout--flush">
@@ -15,16 +15,16 @@
         </div>
 
         <div class="c-filter__element">
-          <ul class="c-filter__tags o-layout js-filter-tags">
+          <div class="c-filter__tags js-filter-tags u-clearfix">
             <?php foreach ($tags as $tag): if ($tag == "") continue; ?>
-              <li class="o-layout__item">
-                <label>
-                  <input type="checkbox" name="tags" value="<?php echo str::slug($tag); ?>">
-                  <?php echo ucfirst($tag); ?>
-                </label>
-              </li>
+                <div class="o-checkbox-tag">
+                  <input type="checkbox" name="tags" value="<?php echo str::slug($tag); ?>" id="checkbox-<?php echo str::slug($tag); ?>">
+                  <label for="checkbox-<?php echo str::slug($tag); ?>">
+                    <?php echo ucfirst($tag); ?>
+                  </label>
+                </div>
             <?php endforeach; ?>
-          </ul>
+          </div>
         </div>
 
         <div class="c-filter__element">
@@ -35,12 +35,12 @@
     </div>
 
     <div class="o-layout__item u-3/5@md u-4/5@lg">
-      <div class="c-main">
+      <div class="c-main u-padding-tiny">
         <?php echo $page->text()->kirbytext(); ?>
 
-        <div class="o-layout o-layout--small list">
+        <div class="o-layout o-layout--tiny list">
           <?php foreach($snacks as $p): ?>
-            <div class="o-layout__item u-1/2 u-1/5@md u-margin-bottom-small">
+            <div class="o-layout__item u-1/3 u-1/5@md u-margin-bottom-tiny">
               <a href="<?php echo $p->url() ?>">
                 <span class="u-hide title"><?php echo $p->title() ?></span>
                 <span class="u-hide duration"><?php echo $p->duration() ?></span>
@@ -52,7 +52,7 @@
           <?php endforeach ?>
         </div>
 
-        <div class="c-footer">
+        <div class="c-footer u-margin-top">
           Mit <i class="fa fa-heart" title="für Karin"></i> gemacht -
 
           <?php if ($site->footertext()->isNotEmpty()): ?>

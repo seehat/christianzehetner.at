@@ -50,20 +50,17 @@
   }
 
   .c-filter__tags {
-    column-count: 2;
-    column-gap: $unit-tiny;
+    // column-count: 2;
+    // column-gap: $unit-tiny;
 
-    @include mq ($from: lg) {
-      column-count: 1;
-    }
+    // @include mq ($from: lg) {
+    //   column-count: 1;
+    // }
   }
 
-.c-main {
-  padding: $unit-small;
-}
 
 .o-input {
-  padding: $unit-tiny;
+  padding: $unit-small;
   width: 100%;
   border: none;
 }
@@ -103,4 +100,26 @@
     height: 25px; /* Slider handle height */
     background: color(primary);
     cursor: pointer; /* Cursor on hover */
+}
+
+.o-checkbox-tag {
+  float: left;
+  margin-bottom: 1px;
+  margin-right: 1px;
+
+  input {
+    display: none;
+  }
+
+  input + label {
+    background-color: color(light);
+    padding: $unit-tiny $unit-small;
+    display: inline-block;
+    transition: 0.1s;
+  }
+
+  input:checked + label {
+    background-color: color(primary);
+  }
+
 }

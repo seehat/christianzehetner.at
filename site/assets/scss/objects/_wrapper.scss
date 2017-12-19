@@ -1,7 +1,7 @@
 
 .o-wrapper {
-  padding-left: $unit-small;
-  padding-right: $unit-small;
+  padding-left: $unit-tiny;
+  padding-right: $unit-tiny;
 
   @include mq($from: 'md') {
     padding-left: $unit;
