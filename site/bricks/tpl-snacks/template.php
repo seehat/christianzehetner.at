@@ -3,7 +3,7 @@
 <div id="snacks" class="c-snacks js-snacks">
 
   <div class="c-snacks__topbar">
-    <h1 class="u-padding-small u-margin-bottom-small"><?php echo $page->title(); ?></h1>
+    <h1 class="u-padding-small u-margin-bottom-none"><?php echo $page->title(); ?></h1>
   </div>
 
   <div class="c-snacks__main o-layout o-layout--fullheight o-layout--flush">

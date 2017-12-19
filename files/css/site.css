@@ -4298,7 +4298,7 @@ blockquote {
     content: "  ";
     font-family: "Fontawesome";
     display: block;
-    color: #4bb8ce;
+    color: #95ce4b;
     font-size: 72px; }
 
 blockquote p:last-child {
@@ -4309,14 +4309,14 @@ blockquote p:first-child {
 
 cite {
   font-size: 18px;
-  color: #4bb8ce;
+  color: #95ce4b;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 2px; }
   cite:before {
     display: block;
-    color: #4bb8ce;
+    color: #95ce4b;
     font-size: 26px;
     position: relative;
     bottom: -15px;
@@ -4338,10 +4338,10 @@ pre {
   overflow: auto; }
 
 a {
-  color: #4bb8ce;
+  color: #95ce4b;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #319fb5; }
+    color: #7cb531; }
 
 /**
  * 1. Use the system font everywhere.
@@ -4353,34 +4353,18 @@ html {
   font-weight: 400; }
 
 ::-moz-selection {
-  background: #4bb8ce;
+  background: #95ce4b;
   color: #fff; }
 
 ::selection {
-  background: #4bb8ce;
+  background: #95ce4b;
   color: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  letter-spacing: 0.033333333em; }
-
-h1 {
-  margin-bottom: 48px; }
-  h1:after {
-    content: ' ';
-    height: 0;
-    width: 72px;
-    border-bottom: 4px solid #2f4054;
-    clear: both;
-    display: block; }
-    .u-text-center h1:after {
-      margin: 0 auto; }
-    .u-text-right h1:after {
-      margin-left: auto; }
-
-h2, h3, h4, h5, h6 {
+  letter-spacing: 0.033333333em;
   margin-top: 48px; }
-  h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
     margin-top: 0; }
 
 hr {
@@ -5225,13 +5209,13 @@ hr {
 /* Style variants
    ========================================================================== */
 .c-btn--default {
-  background-color: #4bb8ce; }
+  background-color: #95ce4b; }
   .c-btn--default, .c-btn--default:hover, .c-btn--default:active, .c-btn--default:focus {
     text-decoration: none;
     /* [4] */
     color: #fff; }
   .c-btn--default:hover, .c-btn--default:focus {
-    background-color: #319fb5; }
+    background-color: #7cb531; }
 
 /**
  * 1. Artificially increase specificity to combat leaky `.band--* a {}` rules.
@@ -5240,7 +5224,7 @@ hr {
   background-color: #fff; }
   .c-btn--inverted.c-btn--inverted, .c-btn--inverted:hover, .c-btn--inverted:active, .c-btn--inverted:focus {
     text-decoration: none;
-    color: #4bb8ce; }
+    color: #95ce4b; }
   .c-btn--inverted:hover, .c-btn--inverted:focus {
     color: #fff; }
 
@@ -5270,9 +5254,9 @@ hr {
   .c-btn--ghost.c-btn--large {
     padding: 22px 46px; }
   .c-btn--ghost.c-btn--default {
-    color: #4bb8ce; }
+    color: #95ce4b; }
     .c-btn--ghost.c-btn--default:hover, .c-btn--ghost.c-btn--default:focus {
-      color: #319fb5; }
+      color: #7cb531; }
 
 .c-headingenum {
   color: #ccc;
@@ -5296,7 +5280,7 @@ hr {
     color: #111;
     display: block; }
     .c-toc a:hover {
-      color: #4bb8ce; }
+      color: #95ce4b; }
 
 .c-toc__enum {
   color: #ccc;
@@ -5441,7 +5425,7 @@ hr {
 
 .c-icon--service {
   font-size: 36px;
-  color: #4bb8ce;
+  color: #95ce4b;
   display: block;
   margin-bottom: -24px; }
 
@@ -5455,7 +5439,7 @@ figure a {
   display: inline-block; }
 
 .c-link:hover, .c-link:focus {
-  border-bottom: 1px solid #319fb5; }
+  border-bottom: 1px solid #7cb531; }
 
 /**
  * Basic-Styling & Preview-Color Overlay for video element and its wrapper.
@@ -5846,7 +5830,7 @@ figure.html-video[loaded="true"]:after {
       .c-fotorama__caption h1 {
         font-size: 26px;
         color: #111;
-        background-color: #4bb8ce;
+        background-color: #95ce4b;
         padding: 6px 24px; } }
 
 .fotorama__active .c-fotorama__caption {
@@ -5899,7 +5883,7 @@ figure.html-video[loaded="true"]:after {
 .c-header__mobile__item {
   display: inline-block;
   border: 1px solid;
-  border-color: #4bb8ce;
+  border-color: #95ce4b;
   border-radius: 32px;
   height: 32px;
   width: 32px;
@@ -5912,7 +5896,7 @@ figure.html-video[loaded="true"]:after {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1;
-  color: #4bb8ce;
+  color: #95ce4b;
   font-weight: light; }
   .c-logo:hover, .c-logo:focus {
     text-decoration: none; }
@@ -5927,7 +5911,7 @@ figure.html-video[loaded="true"]:after {
 .c-nav-mobile li {
   width: 100%;
   display: block;
-  background-color: #4bb8ce;
+  background-color: #95ce4b;
   border-bottom: 1px solid #eee; }
   .c-nav-mobile li a {
     color: white;
@@ -5987,7 +5971,7 @@ figure.html-video[loaded="true"]:after {
 .c-nav__link--active,
 .c-nav__link:hover,
 .c-nav__link:focus {
-  color: #319fb5;
+  color: #7cb531;
   border-color: currentColor;
   border: none !important;
   text-decoration: underline; }
@@ -6023,7 +6007,7 @@ figure.html-video[loaded="true"]:after {
     padding: 0; }
 
 .c-snacks__topbar {
-  background-color: #ccc; }
+  background-color: #95ce4b; }
 
 .c-snacks__main {
   -ms-flex: 1 1 auto;
@@ -6084,12 +6068,11 @@ figure.html-video[loaded="true"]:after {
 .c-rangeslider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
+  width: 25px;
   /* Set a specific slider handle width */
-  height: 20px;
+  height: 25px;
   /* Slider handle height */
-  background: #4CAF50;
-  /* Green background */
+  background: #95ce4b;
   cursor: pointer;
   /* Cursor on hover */
   border-radius: 50%; }
@@ -6099,8 +6082,7 @@ figure.html-video[loaded="true"]:after {
   /* Set a specific slider handle width */
   height: 25px;
   /* Slider handle height */
-  background: #4CAF50;
-  /* Green background */
+  background: #95ce4b;
   cursor: pointer;
   /* Cursor on hover */ }
 
@@ -9292,6 +9274,9 @@ figure.html-video[loaded="true"]:after {
   .u-display-block\@xl, .u-show\@xl {
     display: block !important; } }
 
+.u-align-right {
+  float: right; }
+
 /* ==========================================================================
    #COLORS
    ========================================================================== */
@@ -9308,31 +9293,31 @@ figure.html-video[loaded="true"]:after {
   border-color: #fff !important; }
 
 .u-color-primary {
-  color: #4bb8ce !important; }
+  color: #95ce4b !important; }
 
 .u-color-primary-bg {
-  background-color: #4bb8ce !important; }
+  background-color: #95ce4b !important; }
 
 .u-color-primary-border {
-  border-color: #4bb8ce !important; }
+  border-color: #95ce4b !important; }
 
 .u-color-primary-highlight {
-  color: #73c8d9 !important; }
+  color: #add973 !important; }
 
 .u-color-primary-highlight-bg {
-  background-color: #73c8d9 !important; }
+  background-color: #add973 !important; }
 
 .u-color-primary-highlight-border {
-  border-color: #73c8d9 !important; }
+  border-color: #add973 !important; }
 
 .u-color-primary-shadow {
-  color: #319fb5 !important; }
+  color: #7cb531 !important; }
 
 .u-color-primary-shadow-bg {
-  background-color: #319fb5 !important; }
+  background-color: #7cb531 !important; }
 
 .u-color-primary-shadow-border {
-  border-color: #319fb5 !important; }
+  border-color: #7cb531 !important; }
 
 .u-color-secondary {
   color: #2f4054 !important; }

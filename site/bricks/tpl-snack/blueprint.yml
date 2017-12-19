@@ -10,16 +10,33 @@ fields:
   reveal: reveal
   tabgeneral: tabcontent
   title: title
-  text: text
-  tags:
-    label: Tags
-    type: tags
-    width: 1/2
   duration:
     label: Zubereitungszeit / min
     type: number
+    width: 1/5
+  tags:
+    label: Tags
+    type: tags
+    width: 4/5
+  text:
+    label: Zubereitung
     width: 1/2
+    tools:
+      - header1
+      - header2
+      - bold
+      - italic
+      - blockquote
+      - unorderedList
+    extends: text
   ingredients:
     label: Zutaten
+    width: 1/2
+    tools:
+      - header1
+      - header2
+      - bold
+      - italic
+      - unorderedList
     extends: text
   seo: seo

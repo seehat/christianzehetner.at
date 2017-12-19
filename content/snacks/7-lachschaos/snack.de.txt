@@ -1,8 +1,8 @@
-Reveal:
+Reveal: 
 
 ----
 
-Tabgeneral:
+Tabgeneral: 
 
 ----
 
@@ -10,15 +10,18 @@ Title: Lachschaos
 
 ----
 
-Text:
+Text: 
+
+- Lachs dampfgaren oder anbraten und in Stücke zerteilen
+- mit Gemüse anrichten
 
 ----
 
-Tabseo:
+Tabseo: 
 
 ----
 
-Seo:
+Seo: 
 
 ----
 
@@ -30,4 +33,13 @@ Duration: 10
 
 ----
 
-Ingredients:
+Ingredients: 
+
+- 1 Lachsfilet
+
+**Gemüse nach belieben: **
+
+- Avocado
+- Paradeiser
+- Paprika
+- ...

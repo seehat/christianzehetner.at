@@ -12,6 +12,12 @@ Title: Gebackener Kürbis
 
 Text: 
 
+- Kerngehäuse vom Kürbis entfernen
+- Kürbis in Spalten schneiden
+- Spalten auf Backblech legen
+- mit Öl einstreichen
+- nach belieben würzen
+
 ----
 
 Tabseo: 
@@ -27,6 +33,14 @@ Tags: warm,kalt
 ----
 
 Ingredients: 
+
+- 1/2 Kürbis
+
+## Mögliche Gewürze
+
+- Salz
+- Pfeffer
+- Paprika
 
 ----
 

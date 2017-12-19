@@ -1,5 +1,7 @@
 $(function () {
 
+  if ($('#snacks').length <= 0) return;
+
   var $inputs = $('.js-tagsfilter input');
 
   var entries = new List('snacks', {

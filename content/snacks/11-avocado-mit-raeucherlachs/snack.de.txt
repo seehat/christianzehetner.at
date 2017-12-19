@@ -1,8 +1,8 @@
-Reveal:
+Reveal: 
 
 ----
 
-Tabgeneral:
+Tabgeneral: 
 
 ----
 
@@ -10,15 +10,20 @@ Title: Avocado mit Räucherlachs
 
 ----
 
-Text:
+Text: 
+
+- Stein der Avocado entfernen
+- Avocado aushölen und schneiden
+- mit Zitrone , Salz und Pfeffer würzen
+- mit Lachs anrichten
 
 ----
 
-Tabseo:
+Tabseo: 
 
 ----
 
-Seo:
+Seo: 
 
 ----
 
@@ -30,4 +35,9 @@ Duration: 5
 
 ----
 
-Ingredients:
+Ingredients: 
+
+- 1 Avocado
+- 1 Räucherlachs
+- Zitrone
+- Salz, Pfeffer

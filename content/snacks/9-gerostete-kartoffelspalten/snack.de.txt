@@ -1,8 +1,8 @@
-Reveal:
+Reveal: 
 
 ----
 
-Tabgeneral:
+Tabgeneral: 
 
 ----
 
@@ -10,15 +10,19 @@ Title: Geröstete Kartoffelspalten
 
 ----
 
-Text:
+Text: 
+
+- Kartoffln in Spalten schneiden
+- mit Öl und Gewürzen mischen
+- im Rohr ca. 20 min bei 180° backen bis sie braun und durch sind
 
 ----
 
-Tabseo:
+Tabseo: 
 
 ----
 
-Seo:
+Seo: 
 
 ----
 
@@ -26,8 +30,8 @@ Tags: kohlenhydrate
 
 ----
 
-Duration: 20
+Duration: 25
 
 ----
 
-Ingredients:
+Ingredients: - 4 Kartoffeln

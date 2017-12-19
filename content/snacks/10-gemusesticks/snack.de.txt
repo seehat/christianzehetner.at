@@ -1,8 +1,8 @@
-Reveal:
+Reveal: 
 
 ----
 
-Tabgeneral:
+Tabgeneral: 
 
 ----
 
@@ -10,15 +10,15 @@ Title: Gemüsesticks
 
 ----
 
-Text:
+Text: Gemüse in längliche Streifen schneiden
 
 ----
 
-Tabseo:
+Tabseo: 
 
 ----
 
-Seo:
+Seo: 
 
 ----
 
@@ -30,4 +30,11 @@ Duration: 5
 
 ----
 
-Ingredients:
+Ingredients: 
+
+Gemüse nach belieben
+
+- Karotten
+- Zuchini
+- Gurken
+- ...
