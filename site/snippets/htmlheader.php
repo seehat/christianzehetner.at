@@ -11,14 +11,8 @@
     <base href="<?= site()->url() ?>">
     <?php echo $page->metaTags() ?>
 
-    <!-- GOOGLEWEBFONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
-
     <?php snippet('favicons') ?>
 
-    <!-- Prefetch DNS for external assets (Twitter widgets etc). -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//themes.googleusercontent.com">
     <?php echo css('files/css/site' . c::get('assets.suffix') . '.css') ?>
 
   </head>
