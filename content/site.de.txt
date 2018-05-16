@@ -35,7 +35,7 @@ Logo:
 
 ----
 
-Footertext: (link: /impressum text: Impressum)
+Footertext: (link: /impressum text: Impressum) - (link: /datenschutz text: Datenschutz)
 
 ----
 

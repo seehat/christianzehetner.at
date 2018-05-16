@@ -25,7 +25,6 @@ c::set('languages', array(
 ));
 c::set('language.detect', false);
 
-
 // General
 c::set('locale', 'de_DE');
 c::set('thumbs.driver', 'im');

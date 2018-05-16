@@ -1,0 +1,88 @@
+Reveal: 
+
+----
+
+Tabgeneral: 
+
+----
+
+Locations: 
+
+- 
+  text: |
+    Hier wohnen wir.
+    
+    Mühlhausergasse 3/11
+    3372 Blindenmarkt
+  location: |
+    address: Blindenmarkt
+    lat: "48.128061138921794"
+    lng: "14.98984042187351"
+- 
+  text: Bester Parkplatz werktags.
+  location: |
+    address: Blindenmarkt
+    lat: "48.12704961594072"
+    lng: "14.991878900724828"
+- 
+  text: Parkplatz sonntags und abends im Markt
+  location: |
+    address: Blindenmarkt
+    lat: "48.128646559934765"
+    lng: "14.989244971472203"
+
+----
+
+Boxsettings: 
+
+----
+
+Layout: off
+
+----
+
+Width: full
+
+----
+
+Height: viewport
+
+----
+
+Bgcolor: 
+
+----
+
+Spacing: flush
+
+----
+
+Img: 
+
+----
+
+Imagetransparency: 1
+
+----
+
+Contentorientationhorizontal: left
+
+----
+
+Contentorientationvertical: center
+
+----
+
+Contentposition: middle-center
+
+----
+
+Contentanimation: 
+
+----
+
+Imageanimation: 
+
+----
+
+Title: Landkarte

@@ -1,0 +1,54 @@
+Reveal: 
+
+----
+
+Tabgeneral: 
+
+----
+
+Title: Karotten Hirse
+
+----
+
+Duration: 20
+
+----
+
+Tags: warm
+
+----
+
+Text: 
+
+- Karotten schälen und grob raspeln
+- Hirse im Sieb abspülen
+- Wasser mit Curry aufkochen
+- Hirse, Karotten, Salz, Gemüsewürze, Muskat und Pfeffer ins kochende Wasser geben
+- 15 Minuten köcheln lassen
+- mit Petersilie verfeinern
+- abschmecken
+
+----
+
+Ingredients: 
+
+- 100 g Hirse
+- 200 g Karotten
+- 1 TL Curry
+- Muskat
+- Suppenwürze
+- Salz
+- Pfeffer
+- Petersilie
+
+----
+
+Tabseo: 
+
+----
+
+Seo: 
+
+-
+  seo-title: "{{title}} - {{sitename}}"
+  seo-description: ""
