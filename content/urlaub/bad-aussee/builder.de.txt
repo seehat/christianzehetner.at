@@ -1,0 +1,29 @@
+Reveal: 
+
+----
+
+Tabgeneral: 
+
+----
+
+Title: Bad Aussee
+
+----
+
+Modules: gallery-1j2um0z
+
+----
+
+Settings: 
+
+----
+
+Hideheaderfooter: 1
+
+----
+
+Tabseo: 
+
+----
+
+Seo: 

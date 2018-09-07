@@ -1,0 +1,65 @@
+Reveal: 
+
+----
+
+Tabgeneral: 
+
+----
+
+Margin: small
+
+----
+
+Boxsettings: 
+
+----
+
+Layout: off
+
+----
+
+Width: full
+
+----
+
+Height: normal
+
+----
+
+Bgcolor: 
+
+----
+
+Spacing: small
+
+----
+
+Img: 
+
+----
+
+Imagetransparency: 1
+
+----
+
+Contentorientationhorizontal: left
+
+----
+
+Contentorientationvertical: center
+
+----
+
+Contentposition: middle-center
+
+----
+
+Contentanimation: 
+
+----
+
+Imageanimation: 
+
+----
+
+Title: Gallerie
