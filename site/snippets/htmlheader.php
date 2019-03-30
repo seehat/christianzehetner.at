@@ -11,7 +11,7 @@
     <base href="<?= site()->url() ?>">
     <?php echo $page->metaTags() ?>
 
-    <?php snippet('favicons') ?>
+    <?php // snippet('favicons') ?>
 
     <?php echo css('files/css/site' . c::get('assets.suffix') . '.css') ?>
 
