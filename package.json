@@ -1,5 +1,5 @@
 {
-  "name": "kirbyboilerplate",
+  "name": "christianzehetner",
   "version": "0.0.1",
   "description": "Website",
   "author": "mgf (http://mgf.at)",
@@ -45,8 +45,8 @@
     "webpack-stream": "^4.0.0"
   },
   "scripts": {
-    "stage:status": "ssh user@host 'cd ~ && git status'",
-    "stage:pull": "ssh user@host 'cd ~ && git pull'"
+    "stage:status": "ssh cz 'cd ~/www/christianzehetner.at && git status'",
+    "stage:pull": "ssh cz 'cd ~/www/christianzehetner.at && git pull'"
   },
   "dependencies": {
     "inuit-displays": "^0.1.14"
