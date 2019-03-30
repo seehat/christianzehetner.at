@@ -4170,7 +4170,6 @@ fieldset {
  * Always declare margins in the same direction:
  * csswizardry.com/2012/06/single-direction-margin-declarations
  */
-/* stylelint-disable selector-list-comma-newline-after */
 address,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
@@ -4187,7 +4186,6 @@ fieldset {
 dd, ol, ul {
   margin-left: 24px; }
 
-/* stylelint-enable selector-list-comma-newline-after */
 /* ==========================================================================
    #PAGE
    ========================================================================== */
@@ -4223,22 +4221,22 @@ html {
 h1 {
   font-size: 29.282px;
   font-size: 1.83013rem;
-  line-height: 1.63923; }
+  line-height: 1.22942; }
 
 h2 {
   font-size: 23.4256px;
   font-size: 1.4641rem;
-  line-height: 1.02452; }
+  line-height: 1.28065; }
 
 h3 {
   font-size: 21.296px;
   font-size: 1.331rem;
-  line-height: 1.12697; }
+  line-height: 1.40872; }
 
 h4 {
   font-size: 19.36px;
   font-size: 1.21rem;
-  line-height: 1.23967; }
+  line-height: 1.54959; }
 
 h5 {
   font-size: 17.6px;
@@ -4269,12 +4267,11 @@ img {
   /* [3] */ }
 
 /**
- * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
- *    not make the image fluid.
- */
+   * If a `width` and/or `height` attribute has been explicitly defined, let’s
+   * not make the image fluid.
+   */
 img[width],
 img[height] {
-  /* [1] */
   max-width: none; }
 
 /* ==========================================================================
@@ -4352,10 +4349,6 @@ html {
   color: #424242;
   font-weight: 400; }
 
-::-moz-selection {
-  background: #95ce4b;
-  color: #fff; }
-
 ::selection {
   background: #95ce4b;
   color: #fff; }
@@ -4381,8 +4374,6 @@ hr {
 /**
  * Page-level constraining and wrapping elements.
  */
-/* stylelint-disable */
-/* stylelint-enable */
 .o-wrapper, .o-section--layout-circle {
   padding-right: 24px;
   padding-left: 24px;
@@ -4393,24 +4384,6 @@ hr {
     content: "" !important;
     display: block !important;
     clear: both !important; }
-
-/* Size variants.
-   ========================================================================== */
-.o-wrapper--tiny {
-  padding-right: 6px;
-  padding-left: 6px; }
-
-.o-wrapper--small {
-  padding-right: 12px;
-  padding-left: 12px; }
-
-.o-wrapper--large {
-  padding-right: 48px;
-  padding-left: 48px; }
-
-.o-wrapper--huge {
-  padding-right: 96px;
-  padding-left: 96px; }
 
 /* ==========================================================================
    #LAYOUT
@@ -4462,7 +4435,7 @@ hr {
  *
  * There are plenty more options available to us: explore them below.
  */
-/* Default/mandatory classes.
+/* Default/mandatory classes
    ========================================================================== */
 /**
  * 1. Allows us to use the layout object on any type of element.
@@ -4509,7 +4482,7 @@ hr {
   /* [6] */
   font-size: 1rem; }
 
-/* Gutter size modifiers.
+/* Gutter size modifiers
    ========================================================================== */
 .o-layout--flush {
   margin-left: 0; }
@@ -4536,7 +4509,7 @@ hr {
   .o-layout--huge > .o-layout__item {
     padding-left: 96px; }
 
-/* Vertical alignment modifiers.
+/* Vertical alignment modifiers
    ========================================================================== */
 /**
  * Align all grid items to the middles of each other.
@@ -4552,7 +4525,7 @@ hr {
 
 /**
  * Stretch all grid items of each row to have an equal-height.
- * Please be aware that this modifier class doesn't take any effect in IE9 and
+ * Please be aware that this modifier class doesn’t take any effect in IE9 and
  * below and other older browsers due to the lack of `display: flex` support.
  */
 .o-layout--stretch {
@@ -4563,8 +4536,17 @@ hr {
   .o-layout--stretch > .o-layout__item {
     display: -ms-flexbox;
     display: flex; }
+  .o-layout--stretch.o-layout--center {
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .o-layout--stretch.o-layout--right {
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .o-layout--stretch.o-layout--left {
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
 
-/* Fill order modifiers.
+/* Fill order modifiers
    ========================================================================== */
 /**
  * Fill up the layout system from the centre.
@@ -4599,7 +4581,7 @@ hr {
   .o-layout--reverse > .o-layout__item {
     direction: ltr; }
 
-/* Auto-widths modifier.
+/* Auto-widths modifier
    ========================================================================== */
 /**
  * Cause layout items to take up a non-explicit amount of width.
@@ -4634,14 +4616,12 @@ hr {
   .o-media__body > :last-child {
     margin-bottom: 0; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 /**
  * Modify the amount of space between our image and our text. We also have
  * reversible options for all available sizes.
  */
-/* Gutterless media objects.
-  ========================================================================== */
 .o-media--flush > .o-media__img {
   margin-right: 0;
   margin-left: 0; }
@@ -4674,7 +4654,7 @@ hr {
   margin-right: 0;
   margin-left: 96px; }
 
-/* Reversed media objects.
+/* Reversed media objects
    ========================================================================== */
 .o-media--reverse > .o-media__img {
   float: right;
@@ -4727,6 +4707,20 @@ hr {
   padding-right: 24px;
   /**
      * 1. Fixes problem with images disappearing.
+     *
+     *    The direct child selector '>' needs to remain in order for nested flag
+     *    objects to not inherit their parent’s formatting. In case the image tag
+     *    is wrapped into another tag, e.g. an anchor for linking reasons, it will
+     *    disappear. In that case try wrapping the whole o-flag__img object into
+     *    an anchor tag.
+     *
+     *    E.g.:
+     *
+     *      <a href="/">
+     *        <div class="o-flag__img">
+     *          <img src="./link/to/image.jpg" alt="image alt text">
+     *        </div>
+     *      </a>
      */ }
   .o-flag__img > img {
     max-width: none;
@@ -4744,7 +4738,7 @@ hr {
   .o-flag__body > :last-child {
     margin-bottom: 0; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 .o-flag--flush > .o-flag__img {
   padding-right: 0;
@@ -4778,7 +4772,7 @@ hr {
   padding-right: 0;
   padding-left: 96px; }
 
-/* Reversed flag.
+/* Reversed flag
    ========================================================================== */
 /**
  * 1. Swap the rendered direction of the object…
@@ -4798,7 +4792,7 @@ hr {
     padding-left: 24px;
     /* [3] */ }
 
-/* Alignment variants.
+/* Alignment variants
    ========================================================================== */
 /**
  * Vertically align the image- and body-content differently. Defaults to middle.
@@ -4815,11 +4809,11 @@ hr {
    #LIST-BARE
    ========================================================================== */
 /**
- * Strip list-like appearance from lists by removing their bullets, and any
+ * Strip list-like appearance from lists by removing their bullets and any
  * indentation.
  *
- * Note: Declaring the item-class might not be necessary everywhere but
- * is for example in <dl> lists for the <dd> childs.
+ * Note: Declaring the item class might not be necessary everywhere,
+ * but is for example in <dl> lists for the <dd> children.
  */
 .o-list-bare {
   list-style: none;
@@ -4861,7 +4855,7 @@ hr {
   .o-box > :last-child {
     margin-bottom: 0; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 .o-box--flush {
   padding: 0; }
@@ -4891,7 +4885,7 @@ hr {
 
 .o-block__img {
   margin-bottom: 24px;
-  /* Size variants.
+  /* Size variants
        ====================================================================== */ }
   .o-block--flush > .o-block__img {
     margin-bottom: 0; }
@@ -4907,7 +4901,7 @@ hr {
 .o-block__body {
   display: block; }
 
-/* Alignment variants.
+/* Alignment variants
    ========================================================================== */
 .o-block--right {
   text-align: right; }
@@ -4924,12 +4918,11 @@ hr {
  *
  * http://alistapart.com/article/creating-intrinsic-ratios-for-video
  *
- * 1. Default cropping is a 1:1 ratio (i.e. a perfect square).
+ * 1. Default is a 1:1 ratio (i.e. a perfect square).
  */
 .o-ratio {
   position: relative;
-  display: block;
-  overflow: hidden; }
+  display: block; }
   .o-ratio:before {
     content: "";
     display: block;
@@ -4948,13 +4941,12 @@ hr {
   height: 100%;
   width: 100%; }
 
-/* stylelint-disable */
 /* Ratio variants.
    ========================================================================== */
 /**
  * Generate a series of ratio classes to be used like so:
  *
- *   <div class="o-ratio  o-ratio--16:9">
+ *   <div class="o-ratio  o-ratio--golden-ratio">
  *
  */
 .o-ratio--2\:1:before {
@@ -4966,7 +4958,19 @@ hr {
 .o-ratio--16\:9:before {
   padding-bottom: 56.25%; }
 
-/* stylelint-enable */
+/* Contain modifier.
+   ========================================================================== */
+/**
+ * Only works with image content.
+ * Contains the image to the boundaries, without cropping or stretching it.
+ */
+.o-ratio--img-contain > .o-ratio__content:before {
+  height: auto;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto; }
+
 /* ==========================================================================
    #CROP
    ========================================================================== */
@@ -5002,27 +5006,60 @@ hr {
 /**
    * We can position the media in different locations within the cropping area.
    */
-.o-crop__content--right {
-  right: 0;
-  left: auto; }
+.o-crop__content--left-top {
+  left: 0; }
 
-.o-crop__content--bottom {
+.o-crop__content--left-center {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.o-crop__content--left-bottom {
   top: auto;
   bottom: 0; }
 
-.o-crop__content--center {
+.o-crop__content--right-top {
+  right: 0;
+  left: auto; }
+
+.o-crop__content--right-center {
+  top: 50%;
+  right: 0;
+  left: auto;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.o-crop__content--right-bottom {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto; }
+
+.o-crop__content--center-top {
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.o-crop__content--center,
+.o-crop__content--center-center {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-/* stylelint-disable */
-/* Crop-ratio variants.
+.o-crop__content--center-bottom {
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+/* Crop-ratio variants
    ========================================================================== */
 /**
  * Generate a series of crop classes to be used like so:
  *
- *   <div class="o-crop  o-crop--16:9">
+ *   <div class="o-crop  o-crop--golden-ratio">
  *
  */
 .o-crop--2\:1 {
@@ -5034,7 +5071,15 @@ hr {
 .o-crop--16\:9 {
   padding-bottom: 56.25%; }
 
-/* stylelint-enable */
+/* Fill modifier
+   ========================================================================== */
+/**
+ * Content stretches to fill it's container while maintaining aspect-ratio.
+ */
+.o-crop--fill > .o-crop__content {
+  min-height: 100%;
+  min-width: 100%; }
+
 /* ==========================================================================
    #TABLE
    ========================================================================== */
@@ -5044,7 +5089,7 @@ hr {
 .o-table {
   width: 100%; }
 
-/* Equal-width table cells.
+/* Equal-width table cells
    ========================================================================== */
 /**
  * `table-layout: fixed` forces all cells within a table to occupy the same
@@ -5056,7 +5101,7 @@ hr {
 .o-table--fixed {
   table-layout: fixed; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 .o-table--tiny th,
 .o-table--tiny td {
@@ -5103,19 +5148,19 @@ hr {
   /* [1] */
   vertical-align: top;
   /* [2] */
-  /* Vertical alignment variants.
+  /* Vertical alignment variants
        ====================================================================== */ }
   .o-pack--middle > .o-pack__item {
     vertical-align: middle; }
   .o-pack--bottom > .o-pack__item {
     vertical-align: bottom; }
 
-/* Unequal-width items.
+/* Unequal-width items
    ========================================================================== */
 .o-pack--auto {
   table-layout: auto; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 .o-pack--tiny {
   border-spacing: 6px; }
@@ -5895,7 +5940,7 @@ figure.html-video[loaded="true"]:after {
 .c-logo {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.25;
   color: #95ce4b;
   font-weight: light; }
   .c-logo:hover, .c-logo:focus {
@@ -6641,7 +6686,11 @@ figure.html-video[loaded="true"]:after {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+  .u-push-none\@sm {
+    left: auto !important; }
+  .u-pull-none\@sm {
+    right: auto !important; } }
 
 @media (min-width: 45em) {
   .u-1\/1\@md {
@@ -6868,7 +6917,11 @@ figure.html-video[loaded="true"]:after {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+  .u-push-none\@md {
+    left: auto !important; }
+  .u-pull-none\@md {
+    right: auto !important; } }
 
 @media (min-width: 64em) {
   .u-1\/1\@lg {
@@ -7095,7 +7148,11 @@ figure.html-video[loaded="true"]:after {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+  .u-push-none\@lg {
+    left: auto !important; }
+  .u-pull-none\@lg {
+    right: auto !important; } }
 
 @media (min-width: 90em) {
   .u-1\/1\@xl {
@@ -7322,7 +7379,11 @@ figure.html-video[loaded="true"]:after {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+  .u-push-none\@xl {
+    left: auto !important; }
+  .u-pull-none\@xl {
+    right: auto !important; } }
 
 /* ==========================================================================
    #HEADINGS
@@ -7338,22 +7399,22 @@ figure.html-video[loaded="true"]:after {
 .u-h1 {
   font-size: 29.282px !important;
   font-size: 1.83013rem !important;
-  line-height: 1.63923 !important; }
+  line-height: 1.22942 !important; }
 
 .u-h2 {
   font-size: 23.4256px !important;
   font-size: 1.4641rem !important;
-  line-height: 1.02452 !important; }
+  line-height: 1.28065 !important; }
 
 .u-h3 {
   font-size: 21.296px !important;
   font-size: 1.331rem !important;
-  line-height: 1.12697 !important; }
+  line-height: 1.40872 !important; }
 
 .u-h4 {
   font-size: 19.36px !important;
   font-size: 1.21rem !important;
-  line-height: 1.23967 !important; }
+  line-height: 1.54959 !important; }
 
 .u-h5 {
   font-size: 17.6px !important;
@@ -7380,7 +7441,6 @@ figure.html-video[loaded="true"]:after {
  *   .u-padding-horizontal {}
  *   .u-padding-vertical-small {}
  */
-/* stylelint-disable string-quotes */
 .u-padding {
   padding: 24px !important; }
 
@@ -7657,21 +7717,52 @@ figure.html-video[loaded="true"]:after {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
-/* stylelint-enable string-quotes */
 /* ==========================================================================
    #RESPONSIVE-SPACINGS
    ========================================================================== */
 /**
  * Utility classes enhancing the normal spacing classes by adding responsiveness
- * to them. By default this brings us the following classes:
+ * to them. By default, there are not responsive spacings defined. You can
+ * generate responsive spacings by adding entries to the following three Sass
+ * maps, e.g.:
  *
- *   .u-margin-bottom-none@mobile {}
- *   .u-margin-bottom-none@tablet {}
- *   .u-margin-bottom-none@desktop {}
- *   .u-margin-bottom-none@wide {}
+ *   $inuit-responsive-spacing-directions: (
+ *     null: null,
+ *     bottom: bottom,
+ *   );
  *
- * But we can affect the classes that get generated by altering the appropriate
- * Sass maps below.
+ *   $inuit-responsive-spacing-properties: (
+ *     "margin": "margin",
+ *   );
+ *
+ *   $inuit-responsive-spacing-sizes: (
+ *     "-small": $inuit-global-spacing-unit-small,
+ *   );
+ *
+ * This would bring us the following classes:
+ *
+ *   .u-margin-small@mobile {}
+ *   .u-margin-small@tablet {}
+ *   .u-margin-small@desktop {}
+ *   .u-margin-small@wide {}
+ *   .u-margin-bottom-small@mobile {}
+ *   .u-margin-bottom-small@tablet {}
+ *   .u-margin-bottom-small@desktop {}
+ *   .u-margin-bottom-small@wide {}
+ *
+ * You can change the generated CSS classes by further extending the Sass maps.
+ * If you want every ‘normal’ spacing (those from `utilities.spacings`) also as
+ * a responsive version, you can just mirror the ‘normal’ spacings:
+ *
+ *   $inuit-responsive-spacing-directions: $inuit-spacing-directions !default;
+ *
+ *   $inuit-responsive-spacing-properties: $inuit-spacing-properties !default;
+ *
+ *   $inuit-responsive-spacing-sizes: $inuit-spacing-sizes !default;
+ *
+ * BUT BE AWARE: This can generate a huge chunk of extra CSS, depending on the
+ * amount of breakpoints you defined. So please check your CSS’ output and
+ * filesize!
  */
 /* stylelint-disable max-nesting-depth */
 @media (min-width: 20em) {
@@ -9129,9 +9220,7 @@ figure.html-video[loaded="true"]:after {
    */
   *,
   *:before,
-  *:after,
-  *:first-letter,
-  *:first-line {
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* [1] */
@@ -9145,7 +9234,7 @@ figure.html-video[loaded="true"]:after {
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /**
-   * Don't show links that are fragment identifiers, or use the `javascript:`
+   * Don’t show links that are fragment identifiers, or use the `javascript:`
    * pseudo protocol.
    */
   a[href^="#"]:after,
@@ -9280,6 +9369,9 @@ figure.html-video[loaded="true"]:after {
 
 .u-align-right {
   float: right; }
+
+.u-rounded-full {
+  border-radius: 9999px !important; }
 
 /* ==========================================================================
    #COLORS
