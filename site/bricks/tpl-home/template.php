@@ -8,32 +8,31 @@
 
   <h1>Christian Zehetner</h1>
 
-  <p>
-    <a href="https://github.com/seehat" rel="me" target="_blank">
-      <?php echo kirbytag(['tel' => '0680 32 89 783']) ?>
-    </a>
-    /
-    <a href="https://github.com/seehat" rel="me" target="_blank">
-      <?php echo kirbytag(['email' => 'mail@christianzehetner.at']) ?>
-    </a>
-    <br>
-    Atzelsdorferstr. 3/1/7, 3372 Blindenmarkt
-  </p>
+
 
   <ul class="o-list-inline">
     <li class="o-list-inline__item u-margin-left-small">
-      <a href="https://www.facebook.com/seehat/about" rel="me" target="_blank">Facebook</a>
+        <?php echo kirbytag(['email' => 'mail@christianzehetner.at', 'text' => 'E-Mail']) ?>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a href="https://github.com/seehat" rel="me" target="_blank">Github</a>
+      <a class="c-link" href="https://www.facebook.com/seehat/about" rel="me" target="_blank">Facebook</a>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a href="https://www.instagram.com/christian.zehetner/" rel="me" target="_blank">Instagram</a>
+      <a class="c-link" href="https://github.com/seehat" rel="me" target="_blank">Github</a>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a href="<?php echo $page->file('Lebenslauf.pdf')->url(); ?>" rel="me" target="_blank">Lebenslauf</a>
+      <a class="c-link" href="https://www.instagram.com/christian.zehetner/" rel="me" target="_blank">Instagram</a>
+    </li>
+    <li class="o-list-inline__item u-margin-left-small">
+      <a class="c-link" href="<?php echo $page->file('Lebenslauf.pdf')->url(); ?>" rel="me" target="_blank">Lebenslauf</a>
     </li>
   </ul>
+
+  <p>
+    Atzelsdorferstr. 3/1/7,
+    <br>
+    3372 Blindenmarkt
+  </p>
 
 </div>
 
