@@ -12,7 +12,7 @@
 
   <ul class="o-list-inline">
     <li class="o-list-inline__item u-margin-left-small">
-        <?php echo kirbytag(['email' => 'mail@christianzehetner.at', 'text' => 'E-Mail']) ?>
+        <?php echo kirbytag(['email' => 'mail@christianzehetner.at', 'text' => 'E-Mail', 'rel' => 'me']) ?>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
       <a class="u-url c-link" href="https://www.facebook.com/seehat/about" rel="me" target="_blank">Facebook</a>
