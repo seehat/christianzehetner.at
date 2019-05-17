@@ -15,13 +15,13 @@
         <?php echo kirbytag(['email' => 'mail@christianzehetner.at', 'text' => 'E-Mail']) ?>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a class="c-link" href="https://www.facebook.com/seehat/about" rel="me" target="_blank">Facebook</a>
+      <a class="u-url c-link" href="https://www.facebook.com/seehat/about" rel="me" target="_blank">Facebook</a>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a class="c-link" href="https://github.com/seehat" rel="me" target="_blank">Github</a>
+      <a class="u-url c-link" href="https://github.com/seehat" rel="me" target="_blank">Github</a>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a class="c-link" href="https://www.instagram.com/christian.zehetner/" rel="me" target="_blank">Instagram</a>
+      <a class="u-url c-link" href="https://www.instagram.com/christian.zehetner/" rel="me" target="_blank">Instagram</a>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
       <a class="c-link" href="<?php echo $page->file('Lebenslauf.pdf')->url(); ?>" rel="me" target="_blank">Lebenslauf</a>
