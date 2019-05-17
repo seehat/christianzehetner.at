@@ -4,9 +4,13 @@
 
 <div class="c-main o-wrapper u-text-center u-margin-top-large">
 
-  <img class="u-rounded-full" src="<?php echo $portrait->crop(200)->url(); ?>" alt="<?php echo $portrait->alt(); ?>">
+  <div class="h-card">
+    <a class="u-url" href="<?php echo url() ?>">
+      <img class="u-photo u-rounded-full" src="<?php echo $portrait->crop(200)->url(); ?>" alt="<?php echo $portrait->alt(); ?>">
+    </a>
 
-  <h1>Christian Zehetner</h1>
+    <h1 class="p-name">Christian Zehetner</h1>
+  </div>
 
 
 
