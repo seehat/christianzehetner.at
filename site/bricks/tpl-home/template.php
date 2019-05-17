@@ -24,7 +24,7 @@
       <a class="u-url c-link" href="https://www.instagram.com/christian.zehetner/" rel="me" target="_blank">Instagram</a>
     </li>
     <li class="o-list-inline__item u-margin-left-small">
-      <a class="c-link" href="<?php echo $page->file('Lebenslauf.pdf')->url(); ?>" rel="me" target="_blank">Lebenslauf</a>
+      <a class="c-link" href="<?php echo $page->file('Lebenslauf.pdf')->url(); ?>" target="_blank">Lebenslauf</a>
     </li>
   </ul>
 
